@@ -1,0 +1,544 @@
+body{ 
+	margin: 0;
+    padding: 0;
+    border: 0;
+	background-color :#fcfcfc;
+}
+	
+/* CSS ZA ZAGLAVLJE*/
+.zaglavlje {
+    background-color :#2b3034;
+	height:150px;
+    color:white;
+    padding: 5px;
+    font-size: 75px;
+    font-family: Segoe Print ;
+}
+
+.zaglavljetekst {
+    text-align: left;  
+    margin-left: 0px;
+}
+
+.zaglavlje img{
+	float:right;
+    margin-top: 50px;
+	width:30px;
+    border:solid;
+    border-radius: 2mm;
+	margin-right:145px;
+	border-color:#2b3034;
+}
+
+.podnozje {
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color :#2b3034;
+	height:30px;
+	padding:5px;
+    text-align : center;
+    color:white;
+    font-size: 15px;
+    font-style: italic;
+	font-weight: normal;
+}
+
+#inst{
+	float:right;
+	width:30px;
+	border:solid;
+	border-radius: 2mm;
+	border-color:#2b3034;
+	margin-right:13px;
+}
+
+#logo {
+    margin-top: 10px;
+	float:left;
+    display: block;
+  	margin-left: 100px;
+  	width: 225px;
+}
+
+
+
+/*CSS ZA IZBORNIK*/
+.izbornik { 
+	z-index:100;
+	margin-left: 100px;
+	margin-top: 0px;
+	margin-right: 100px;
+	position:sticky;
+	top:0;
+	background-color: #7FA119;
+	float: center;
+	font-family: Segoe Print;
+}
+
+.active {
+	background-color: #FCFCFC;
+}
+
+.izbornik ul {
+	margin-top: 0px;
+	margin-bottom: 0px;
+    list-style: outside none none;
+    padding: 10px;
+    text-align: center;
+	word-spacing : 150px;	
+}
+
+.izbornik ul li {
+    display: inline;
+    text-transform: uppercase;
+}
+
+.izbornik ul li a {
+    display: inline;
+    color: black;
+    text-align:center;
+    padding: 10px 16px;
+    text-decoration: none;	
+}
+
+.izbornik ul li p {
+    display: inline;
+    color: black;
+    text-align:center;
+    padding: 10px 16px;
+    text-decoration: none;
+    border-radius: black;
+}
+
+.izbornik ul li a:hover {
+    background-color: #233034;
+}
+
+
+
+/*CSS ZA STRANICU START*/
+.alert {
+    padding: 25px;
+    background-color: white; 
+    color: black;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: black;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+.centralna {
+    z-index:1;
+    width : 57.4%;
+    margin-left: 21.3%;
+    margin-right: 16%;
+    margin-top: 0px;
+    height : 3800px;
+    background-color :#DBF28E;
+    float : center;
+}
+    
+.centralnasadrzaj { 
+    letter-spacing: 1px; 
+    text-align: center;
+}
+
+.centralnasadrzaj p{
+    margin-left:44px;
+    margin-right:40px;
+    margin-top:10px;
+    text-align: center;
+    border: solid;
+    border-color: #2b3034;
+    padding-left: 15px;
+    padding-right:15px;
+    padding-top: 1px;
+    padding-bottom:10px;
+    border-radius: 3mm;
+    border-width: 4px;
+    font-size: 17px;
+    font-family:  Segoe Print;
+}
+
+.desnanav {
+    line-height : 30px;
+    margin-right: 100px;
+    background-color : #CEE28C;
+    height : 3800px;
+    width : 15%;
+    float : right;
+    font-family: century;
+    font-size: 12px;
+}
+
+.desnanavtekst {
+    padding : 5px;
+    padding-top:0px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family:  Segoe Print;
+}
+
+.desnanav iframe {
+    line-height : 100px;
+    float : right;
+    font-family: century;
+    padding-top:10px;
+    padding-right:0px;
+    padding-bottom:10px;
+}
+
+.lijevanav{
+    line-height : 30px;
+    margin-left: 100px;
+    background-color : #CEE28C;
+    height : 3800px;
+    width : 15%;
+    float : left;
+}
+
+.lijevanavtekst {
+    text-align: center;
+    font-family:  Segoe Print;
+}
+
+#slika {  
+    line-height :25px;
+    margin-left: 28px;
+    height : 150px;
+    float : left;
+}
+
+.sl {
+    position:relative;
+    height:585px;
+    width:650px;
+    margin:0 auto;
+}
+
+.sl img {
+    width:400px;
+    position:absolute;
+    left:140px;
+    webkit-transition: opacity 1s ease-in-out;
+    moz-transition: opacity 1s ease-in-out;
+    o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+.sl img.top:hover {
+    opacity:0;
+}
+.video {
+    width:600px;
+    height: 250px;
+    line-height :25px;
+    margin-left: 0px;
+    left:140px;
+}
+
+.glow {
+    color: #fff;
+    text-align: center;
+    webkit-animation: glow 1s ease-in-out infinite alternate;
+    moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px#3d5c5c, 0 0 40px #3d5c5c, 0 0 50px#3d5c5c, 0 0 60px #3d5c5c, 0 0 70px #3d5c5c;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #3d5c5c, 0 0 40px #3d5c5c, 0 0 50px #3d5c5c, 0 0 60px #3d5c5c, 0 0 70px#3d5c5c, 0 0 80px #3d5c5c;
+  }
+}
+
+.gloww {
+    color: #fff;
+    text-align: center;
+    webkit-animation: gloww 1s ease-in-out infinite alternate;
+    moz-animation: gloww 1s ease-in-out infinite alternate;
+    animation: gloww 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes gloww {
+    from {
+    text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px#ff0000, 0 0 40px #ff0000, 0 0 50px#ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px#ff0000, 0 0 80px #ff0000;
+  }
+}
+
+#partner{
+    float:center;
+    display: block;
+    width: 140px;
+    margin-left: 28px;
+    margin-right: 20px;
+    }
+
+
+
+/*CSS ZA STRANICU PROIZVOD*/
+.centralnaPRO {
+	z-index:1;
+    width : 57%;
+    margin-left: 21.3%;
+    margin-right: 17%;
+	margin-top: 0px;
+    height : 5350px;
+    background-color :#DBF28E;
+    float : center;
+}
+	
+.centralnasadrzajPRO { 
+	letter-spacing: 1px; 
+}
+
+.centralnasadrzajPRO p{
+    margin-left:52px;
+	margin-right:43px;
+	margin-top:10px;
+    text-align: center;
+    border: solid;
+    border-color: #2b3034;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 1px;
+    padding-bottom: 40px;
+    border-radius: 3mm;
+    border-width: 4px;
+    font-size: 17px;
+	font-family:  Segoe Print;
+}
+
+.desnanavPRO {
+    line-height : 30px;
+    margin-right: 100px;
+    background-color : #CEE28C;
+    height : 5350px;
+    width : 15%;
+    float : right;
+    font-family:  Segoe Print;
+}
+
+.desnanavtekstPRO {
+	padding : 15px;
+}
+
+	
+.lijevanavPRO {
+    line-height : 30px;
+    margin-left: 100px;
+    background-color : #CEE28C;
+    height : 5350px;
+    width : 15%;
+    float : left;
+    font-family:  Segoe Print;
+
+}
+.lijevanavtekstPRO {
+    padding : 15px;
+}
+
+#slika1 {  
+	line-height :25px;
+    margin-left: 28px;
+    height : 150px;
+    float : left;
+}
+
+.cf {
+	position:relative;
+	height:585px;
+	width:650px;
+	margin:0 auto;
+}
+
+.cf img {
+	width:400px;
+	position:absolute;
+	left:140px;
+	webkit-transition: opacity 1s ease-in-out;
+	moz-transition: opacity 1s ease-in-out;
+	o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+}
+
+.cf img.top:hover {
+	opacity:0;
+}
+
+.card {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0);
+    max-width: 200px;
+    margin: auto;
+    text-align: center;
+    font-family: Segoe Print;
+}
+
+.price {
+    color: red;
+    font-size: 30px;
+}
+
+.card input {
+    border: none;
+    text-align: center;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    width: 95%;
+    font-size: 20px;
+    font-family: Segoe Print;
+}
+
+
+
+/*CSS ZA STRANICU KONTAKT*/
+.centralnaKON {
+    width : 57.4%;
+    margin-left: 21.3%;
+    margin-right: 17%;
+	margin-top: 0px;
+    height : 700px;
+    background-color : #DBF28E;
+    float : center;
+}
+	
+.centralnasadrzajKON { 
+	letter-spacing: 1px; 
+}
+#centralnaKON {
+    margin-left:110px;
+	margin-right:110px;
+	margin-top:0;
+    text-align: center;
+    padding-left: 0px;
+    padding-right:0px;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    color: #black;
+    font-size: 17px;
+	font-family: Segoe Print;
+}
+
+.desnanavKON {
+    line-height : 30px;
+    margin-right: 100px;
+    background-color : #CEE28C;
+    height : 700px;
+    width :20%;
+    float : right;
+}
+
+.desnanavtekstKON {
+	padding : 5px;
+	padding-top:0px;
+	text-align: center;
+    letter-spacing: 1px;
+	font-family:  Segoe Print;
+}
+
+.lijevanavKON {
+	padding-top:0px;
+	line-height : 30px;
+    margin-left: 100px;
+    background-color : #CEE28C;
+    height : 700px;
+    width : 20%;
+    float : left;
+    font-family: Segoe Print;
+}
+
+.lijevanavtekstKON {
+	text-align: center;
+	padding : 5px;
+}
+
+
+
+/*CSS ZA JAVUSCRIPT*/
+.java {
+    z-index:1;
+    margin-left:100px;
+    margin-right: 100px;
+    margin-top: 0px;
+    height : 500px;
+    background-color :#2b3034;
+    float : center;
+}
+
+.java p{
+    margin-left:50px;
+    margin-right:50px;
+    text-align:center;
+    padding-top:10px;
+    padding-bottom:0px;
+    color:#fcfcfc;
+    font-family: Segoe Print;
+}
+
+.button{
+    font-family: Segoe Print;
+    background-color: #fcfcfc; 
+    border: none;
+    color: #000;
+    align:center;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    width:83%;
+    margin-left:50px;
+    margin-right:100px;
+    margin-top:5px;
+}
+
+textarea {
+    margin-left:50px;
+    margin-right:20px;
+    margin-top:5px;
+    padding:6px;
+    font-size:15px;
+    height:80px;
+    width:80.5%;
+    font-family: Segoe Print;
+}
+
+#greska{
+    width:80%;
+    margin-left:50px;
+    margin-bottom: 5px;
+    padding: 0px;
+    text-align: center;
+    font-size: 13px;
+    color:red;
+    font-family: Segoe Print;
+}
+
+input[type=text] {
+    margin-top:5px;
+    margin-left:50px;
+    margin-right:20px;
+    padding:6px;
+    width:80%;
+    font-size:15px;
+    font-family: Segoe Print;
+    background-color:#fcfcfc;
+}
+
